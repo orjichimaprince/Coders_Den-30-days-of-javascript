@@ -52,6 +52,6 @@ console.log(numMaxs2);
 // Access the 'JavaScript' string characters using a random number.
 Ans:
     let frontEnd = `JavaScript`;
-console.log(frontEnd[1]);
+console.log(frontEnd[1])
 
 // Use console.log() and escape characters to print the following pattern.
