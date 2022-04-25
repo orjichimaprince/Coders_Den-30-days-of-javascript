@@ -71,30 +71,38 @@ console.log(frontEndOutput);
 Ans:
     console.log(' 1\t1\t1\t1\t1 \n 2\t1\t2\t4\t8 \n 3\t1\t3\t9\t27 \n 4\t1\t4\t16\t64 \n 5\t1\t5\t25\t125')
 
-// Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
-var phrase = `You cannot end a sentence with because because because is a conjunction`
+// Que: Use substr to slice out the phrase because because because from the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+Ans:
+    var phrase = `You cannot end a sentence with because because because is a conjunction`
 console.log(phrase.substr(phrase.indexOf('because'), 24));
 
-// Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
+// Que: Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
 // to revist 
+
+Ans;
 var feeling = `Love is the best thing in this world. Some found their love and some are still looking for their love.`
 console.log(feeling.repeat(`love`));
 
-//  Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
-var phrase = `You cannot end a sentence with because because because is a conjunction`
+//Que:  Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+
+Ans:
+    var phrase = `You cannot end a sentence with because because because is a conjunction`
 console.log(phrase.match(`because`));
 
-// Clean the following text and find the most frequent word (hint, use replace and regular expressions).
+//Que: Clean the following text and find the most frequent word (hint, use replace and regular expressions).
 // to revisit
-const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
-    // var sents = sentence.replace('%','');
+
+Ans:
+    const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
 console.log(sentence.replace('@', ''));
 console.log(sentence.replace('&', ''));
 console.log(sentence.replace('#', ''));
 console.log(sentence.replace('%', ''));
 
-/* Calculate the total annual income of the person by extracting the numbers from the following text. 
+/* Que: Calculate the total annual income of the person by extracting the numbers from the following text. 
 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'*/
+
 Ans:
     var salary = 5000;
 var BonusAnnual = 10000;
