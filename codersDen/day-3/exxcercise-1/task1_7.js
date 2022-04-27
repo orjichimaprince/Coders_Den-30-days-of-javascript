@@ -46,3 +46,24 @@ if(variable){
         console.log(`this is a falsy value`)
 }
 */
+
+//Que: Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
+
+Ans:
+    4 > 3 //true
+4 >= 3 //true
+4 < 3 //false
+4 <= 3 //false
+4 == 4 //true
+4 === 4 //true
+4 != 4 //false
+4 !== 4 //false
+4 != '4' //false
+4 == '4' //true
+4 === '4' //false
+    // Que: Find the length of python and jargon and make a falsy comparison statement.
+
+Ans:
+    let coursse1 = `python`;
+let coursse2 = `jargon`;
+console.log(coursse1.length !== coursse2.length);
