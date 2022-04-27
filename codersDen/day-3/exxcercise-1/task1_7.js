@@ -87,18 +87,10 @@ let animal2 = `python`;
 console.log(animal1.includes(`on`) !== animal1 && animal2.includes(`on`) != animal2);
 
 
-// Use the Date object to do the following activities
+//Que: Use the Date object to do the following activities
 
-
-
-
-
-
-
-
-// Find out the numbers of seconds elapsed from January 1, 1970 to now.
-
-let today = new Date(); // What is the year today?       
+Ans:
+    let today = new Date(); // What is the year today?       
 console.log(today.getFullYear());
 
 let month = new Date();
@@ -116,5 +108,5 @@ console.log(hoursNow.getHours());
 let minutesNow = new Date(); // What is the minutes now?
 console.log(minutesNow.getMinutes());
 
-let numberSeconds = new Date();
+let numberSeconds = new Date(); // Find out the numbers of seconds elapsed from January 1, 1970 to now.
 console.log(numberSeconds.getTime());
