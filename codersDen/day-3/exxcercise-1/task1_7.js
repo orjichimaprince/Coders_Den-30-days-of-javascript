@@ -85,3 +85,36 @@ console.log(coursse1.length !== coursse2.length);
 let animal1 = `dragon`;
 let animal2 = `python`;
 console.log(animal1.includes(`on`) !== animal1 && animal2.includes(`on`) != animal2);
+
+
+// Use the Date object to do the following activities
+
+
+
+
+
+
+
+
+// Find out the numbers of seconds elapsed from January 1, 1970 to now.
+
+let today = new Date(); // What is the year today?       
+console.log(today.getFullYear());
+
+let month = new Date();
+console.log(month.getMonth() + 1); // What is the month today as a number?
+
+let todayDate = new Date(); // What is the date today?
+console.log(todayDate);
+
+let todayDateNumber = new Date(); // What is the day today as a number?
+console.log(todayDateNumber.getDate);
+
+let hoursNow = new Date(); // What is the hours now?
+console.log(hoursNow.getHours());
+
+let minutesNow = new Date(); // What is the minutes now?
+console.log(minutesNow.getMinutes());
+
+let numberSeconds = new Date();
+console.log(numberSeconds.getTime());
