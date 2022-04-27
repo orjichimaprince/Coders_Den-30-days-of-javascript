@@ -28,15 +28,21 @@ Write three JavaScript statement which provide truthy value.
 Write three JavaScript statement which provide falsy value.*/
 
 Ans:
+    // truthy value
     let nigeria = 'country';
 let range = -3;
 let counts = 20;
-let comparison = nigeria == country
 
-/*const myVar = -3
+// falsy value
+let initialVelocity = 0;
+let inputation = ``;
+let caliberation = null;
 
-if (myVar) {
-  console.log('✅ myVar is truthy');
-} else {
-  console.log('⛔️ myVar is falsy');
-}*/
+
+/* use this code to validate the truthy and falsy state of code above
+if(variable){
+        console.log(`this is a truthy value`)
+}else{
+        console.log(`this is a falsy value`)
+}
+*/
