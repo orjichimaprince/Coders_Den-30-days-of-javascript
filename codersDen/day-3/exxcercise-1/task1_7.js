@@ -67,3 +67,21 @@ Ans:
     let coursse1 = `python`;
 let coursse2 = `jargon`;
 console.log(coursse1.length !== coursse2.length);
+
+
+//Que: Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
+
+4 > 3 && 10 < 12 //true
+4 > 3 && 10 > 12 //false
+4 > 3 || 10 < 12 //true
+4 > 3 || 10 > 12 //true
+    !(4 > 3) //false
+    !(4 < 3) //true
+    !(false) //true
+    !(4 > 3 && 10 < 12) //false
+    !(4 > 3 && 10 > 12) //true
+    !(4 === '4') //true
+    //Que: There is no 'on' in both dragon and python
+let animal1 = `dragon`;
+let animal2 = `python`;
+console.log(animal1.includes(`on`) !== animal1 && animal2.includes(`on`) != animal2);
