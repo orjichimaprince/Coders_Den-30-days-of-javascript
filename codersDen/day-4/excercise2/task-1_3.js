@@ -27,18 +27,19 @@ if (studentGradeCheck => 80 && studentGradeCheck <= 100) {
 }
 // }
 
-/*Check if the season is Autumn, Winter, Spring or Summer. If the user input is :
+/* Que: Check if the season is Autumn, Winter, Spring or Summer. If the user input is :
 September, October or November, the season is Autumn.
 December, January or February, the season is Winter.
 March, April or May, the season is Spring
 June, July or August, the season is Summer*/
 
-let season = {
-    Winter: ['december', 'january', 'february'],
-    Autumn: ['september', 'october', 'november'],
-    Spring: ['march', 'april', 'may'],
-    Summer: ['june', 'july', 'august'],
-};
+Ans:
+    let season = {
+        Winter: ['december', 'january', 'february'],
+        Autumn: ['september', 'october', 'november'],
+        Spring: ['march', 'april', 'may'],
+        Summer: ['june', 'july', 'august'],
+    };
 let userSeason = prompt(`what month is it?`).toLowerCase();
 if (userSeason === season.Winter[0] || userSeason === season.Winter[1] || userSeason === season.Winter[2]) {
     console.log(`the season is Winter`);
@@ -51,3 +52,23 @@ if (userSeason === season.Winter[0] || userSeason === season.Winter[1] || userSe
 } else {
     console.log(`invalid input`);
 }
+
+/*Check if a day is weekend day or a working day. Your script will take day as an input.
+    What is the day  today? Saturday
+    Saturday is a weekend.
+
+    What is the day today? saturDaY
+    Saturday is a weekend.
+
+    What is the day today? Friday
+    Friday is a working day.
+
+    What is the day today? FrIDAy
+    Friday is a working day.*/
+
+let weekDays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+let day = prompt(`What is the day today`).toLowerCase();
+(day == weekDays[0]) || (day === weekDays[weekDays.length - 1]) ? console.log(`${day} is a weekend`):
+    (day == weekDays[1]) || (day == weekDays[2]) || (day == weekDays[3]) || (day == weekDays[4]) || (day == weekDays[5]) ?
+    console.log(`${day} is a working day`) :
+    console.log(`this is not a day of the week`);
