@@ -19,10 +19,10 @@ for (let i = 0; i < ages.length; i++) {
     sum += ages[i];
 }
 let agesAverage = sum / ages.length;
-console.log(agesAverage); // Find the average age(all items divided by number of items
+console.log(agesAverage); // Finds the average age(all items divided by number of items
 let minAverage = valueMin - agesAverage;
 let maxAverage = valueMax - agesAverage;
-let compareMinMaxAverage = Math.abs(minAverage) === Math.abs(maxAverage);
+let compareMinMaxAverage = Math.abs(minAverage) === Math.abs(maxAverage); //Compare the value of (min - average) and (max - average), use abs() method 
 console.log(` The value is ${compareMinMaxAverage}`);
 /*const numbers = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 function myFunc(a, b) {
