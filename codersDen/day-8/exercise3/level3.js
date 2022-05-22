@@ -5,29 +5,30 @@ set of incomes and its description and expenses is a set of incomes and its desc
 const personAccount = {
     firstName: 'Chima',
     lastName: 'Prince',
-    incomes: [allowance = 0, specialDuties = 0, medical = 0, special = 0],
-    expenses: [waterBill = 0, NepaBill = 0, upkeep = 0, rent = 0, miscellenous = 0],
-    let totalIncome = function(allowance, specialDuties, medical) {
-            return $(this.allowance) + $(this.specialDuties) + $(this.medical)
-        },
-        let totalExpense = function(waterBill, NepaBill, upkeep, miscellenous) {
-                return `${this.waterBill} + ${this.NepaBill} + ${this.upkeep} + ${this.rent} + ${this.miscellenous}`
-            },
-            let addIncome = function(special, meical, allowance) {
-                    return `${(special + meical)- allowance}`
-                },
-                let accountInfo = function(totalExpense, totalIncome) {
-                        if (totalExpense > totalIncome) {
-                            return 'Account is in debit(dr)'
-                        } else if (totalExpense < totalIncome) {
-                            return 'Account is in debit(dr)'
-                        } else {
-                            return 'Account is in zero balance(0)'
-                        }
-                    },
-                    addExpensse = function(...arr) {
-                        return totalExpense = waterBill + NepaBill + upkeep + rent + miscellenous
-                    }
+    incomes: { allowance: 0, specialDuties: 0, medical: 0, special: 0 },
+    expenses: { waterBill: 0, NepaBill: 0, upkeep: 0, rent: 0, miscellenous: 0 },
+    totalIncome: function() {
+        let { allowance, specialDuties, medical, special } = this.incomes
+        return allowance + specialDuties + medical + special
+    },
+    totalExpense: function() {
+        return this.expenses.waterBill + this.expenses.NepaBill + this.expenses.upkeep + this.expenses.rent + this.expenses.miscellenous
+    },
+    addIncome: function() {
+        return (this.incomes.special + this.incomes.medical) - this.incomes.allowance
+    },
+    accountInfo: function() {
+        if (totalExpense() > totalIncome()) {
+            return 'Account is in debit(dr)'
+        } else if (totalExpense < totalIncome) {
+            return 'Account is in debit(dr)'
+        } else {
+            return 'Account is in zero balance(0)'
+        }
+    },
+    addExpensse: function() {
+        return totalExpense = waterBill + NepaBill + upkeep + rent + miscellenous
+    }
 }
-console.log(addExpensse())
-    // console.log(accountInfo())
+console.log(personAccount.totalExpense())
+console.log(personAccount.totalIncome())
