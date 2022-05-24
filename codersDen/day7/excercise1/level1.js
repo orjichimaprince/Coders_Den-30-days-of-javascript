@@ -97,3 +97,91 @@ Ans:
         return weight
     })(92)
 console.log(calculatesWeight)
+
+/*Que 12:Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. 
+Write a function which convert oC to oF convertCelciusToFahrenheit.*/
+
+Ans:
+    const convertCelciusToFahrenheit = (celcius) => {
+        Fahrenheit = (celcius * 9 / 5) + 32
+        return Fahrenheit
+    }
+console.log(convertCelciusToFahrenheit(23))
+
+/*Que 13:Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. 
+Write a function which calculates bmi. BMI is used to broadly define different weight groups in 
+adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based 
+the information given below.
+
+The same groups apply to both men and women.
+Underweight: BMI is less than 18.5
+Normal weight: BMI is 18.5 to 24.9
+Overweight: BMI is 25 to 29.9
+Obese: BMI is 30 or more*/
+
+Ans:
+    const calculateBMI = (weight, height) => {
+        bmi = weight / (height * height)
+        if (bmi < 18.5) {
+            return (`you are Underweight`)
+        }
+        if (bmi >= 18.5 && bmi <= 24.9) {
+            return (`you are Normal Weighted`)
+        }
+        if (bmi >= 25 && bmi <= 29.9) {
+            return (`you are Overweighted`)
+        }
+        if (bmi >= 30) {
+            return (`you are obese`)
+        } else {
+            return (`invalid input`)
+        }
+    }
+console.log(calculateBMI(18.4, 1))
+console.log(calculateBMI(30, 1))
+
+/*Write a function called checkSeason, it takes a month parameter and returns the 
+season:Autumn, Winter, Spring or Summer.*/
+
+// const checkSeason = (month) => {
+//     let season = ['Autumn', 'Winter', 'Spring', 'Summer']
+//     if (month === 'january' || month === 'february' || month === 'march') {
+//         return `season: is ${season[0]}`
+//     }
+//     if (month === 'april' || month === 'may' || month === 'june') {
+//         return `season: is ${season[1]}`
+//     }
+//     if (month === 'july' || month === 'august' || month === 'september') {
+//         return `season: is ${season[2]}`
+//     }
+//     if (month === 'october' || month === 'november' || month === 'deccember') {
+//         return `season: is ${season[3]}`
+//     } else {
+//         return `invalid input`
+//     }
+// }
+
+
+//alternative method
+const season = {
+    Autumn: ['january', 'february', 'march'],
+    Winter: ['april', 'may', 'june'],
+    Spring: ['july', 'august', 'september'],
+    Summer: ['october', 'november', 'december'],
+}
+const viewSeason = (month) => {
+    if (month === season.Autumn[0] || month === season.Autumn[1] || month === season.Autumn[2]) {
+        return `the season is Autumn`
+    }
+    if (month === season.Winter[0] || month === season.Winter[1] || month === season.Winter[2]) {
+        return `the season is Winter`
+    }
+    if (month === season.Spring[0] || month === season.Spring[1] || month === season.Spring[2]) {
+        return `the season is Spring`
+    }
+    if (month === season.Summer[0] || month === season.Summer[1] || month === season.Summer[2]) {
+        return `the season is Summer`
+    } else {
+        return `invalid input`
+    }
+}
