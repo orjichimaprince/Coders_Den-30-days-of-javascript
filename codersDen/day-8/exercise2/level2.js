@@ -75,38 +75,31 @@ console.log(allValues)
 
 
 
-//Que: Count logged in users,count users having greater than equal to 50 points from the following object.*/
-
-// const getArray = Object.entries(users)
-// const getArrayLength = getArray.length
-// console.log(getArray)
-// console.log(getArray[0].age)
-// console.log(getArrayLength);
-// let getPoint = 0;
-// for (i = 0; i < getArray.length; i++) {
-//     getPoint = getArray[i]
-//     console.log(getPoint)
-// }
-// const getPoints = Object.entries(users.John)
-// console.log(getPoints)
-//     // const address = Object.keys(copyPerson.address)
+/*Que: Count logged in users,count users having greater than equal to 50 points from the following object.*/
+// const address = Object.keys(copyPerson.address)
 
 
-//     const user = {
-//       Alex: {
-//         email: 'alex@alex.com',
-//         skills: ['HTML', 'CSS', 'JavaScript'],
-//         age: 20,
-//         isLoggedIn: false,
-//         points: 30
-//       },
-//       Asab: {
-//         email: 'asab@asab.com',
-//         skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
-//         age: 25,
-//         isLoggedIn: false,
-//         points: 50
-//       },
-//   }
-//   const convertArray = Object.entries(users);
-//   console.log(convertArray[1])
+const user = {
+    Alex: {
+        email: 'alex@alex.com',
+        skills: ['HTML', 'CSS', 'JavaScript'],
+        age: 20,
+        isLoggedIn: false,
+        points: 30
+    },
+    Asab: {
+        email: 'asab@asab.com',
+        skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
+        age: 25,
+        isLoggedIn: false,
+        points: 50
+    },
+}
+
+let storing = Object.values(users)
+count = 0
+for (const users of storing) {
+    let pointsCounts = users.points
+    pointsCounts >= 50 ? count++ : null
+}
+console.log(count)
