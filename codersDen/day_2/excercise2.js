@@ -109,3 +109,5 @@ var BonusAnnual = 10000;
 var coursesOnline = 15000;
 var totalAnnual = salary + BonusAnnual + coursesOnline;
 console.log(totalAnnual);
+
+

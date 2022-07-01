@@ -37,3 +37,13 @@ Ans:
 for (let i = 0; i < 10; i++) {
     console.log(i, i ** 2, i ** 3);
 }
+
+//a  loop that is multiplied by 2
+let num = [2,4,6,8,10];
+let num2 = [];
+for(i=0; i<num.length; i++ ){
+num2 *= num[i]
+console.log(num2**2)
+}
+
+//Use for loop to iterate from 0 to 100 and print only odd numbers

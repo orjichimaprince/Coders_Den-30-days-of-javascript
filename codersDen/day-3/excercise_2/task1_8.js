@@ -42,4 +42,39 @@ console.log(`the radius area of the circle is ${areaRadius} and the circumferenc
 
 // Calculate the slope, x-intercept and y-intercept of y = 2x -2
 Ans:
-    let interceptX =
+    // let interceptX =
+    // will come back to que 4-8
+
+
+/*Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
+
+Enter number of yours you live: 100
+You lived 3153600000 seconds.*/
+
+ //extract year from date      
+    // var year = month_diff.getFullYear();  
+      
+    var dob = new Date("06/24/2008");  
+    var yr = new Date();
+    //calculate month difference from current date in time  
+    var month_diff = yr.getFullYear() - dob.getFullYear();  
+      
+    //convert the calculated difference in date format  
+    var age_dt = new Date(month_diff);   
+      
+    //extract year from date      
+    // var year = month_diff.getFullYear();  
+      
+    //now calculate the age of the user  
+    // var age = Math.abs(month_diff - 1970);  
+// console.log(age);
+console.log(month_diff);
+// console.log(age_dt);
+
+
+
+var workPlace = prompt('Enter workplace');
+(workPlace = 'Uba') ? console.log(`i am going to keffi`):
+(workPlace = 'access') ? console.log(`i will go to lafia`):
+(workPlace = 'Zenith') ? console.log(`i will head towards asokoro`):
+console.log(`i am staying home`);

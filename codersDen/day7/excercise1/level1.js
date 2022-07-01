@@ -185,3 +185,10 @@ const viewSeason = (month) => {
         return `invalid input`
     }
 }
+
+
+
+let words = ['one', 'two', 'three', 'four'];
+words.forEach((word) => {
+  console.log(word);
+});

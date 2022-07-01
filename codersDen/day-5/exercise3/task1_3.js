@@ -5,8 +5,7 @@ Sort the array and find the min and max age
 Find the median age(one middle item or two middle items divided by two)
 Find the average age(all items divided by number of items)
 Find the range of the ages(max minus min)
-Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the countries array*/
-
+Compare the value of (min - average) and (max - average), use abs() method*/
 Ans:
     const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
 let sortt = ages.sort()
@@ -33,16 +32,30 @@ console.log(numbers.reduce(myFunc) / numbers.length);*/ // alternatively using a
 
 // let firsthalve = [];
 // let secondhalve = [];
-if (ages % 2 == 0) {
-    firsthalveEven = ages.splice(0, ages.length / 2 + 1);
-    secondhalveEven = ages.splice(ages.length / 2, ages.length);
-    console.log(firsthalveEven, secondhalveEven);
+if (ages.length % 2 === 0) {
+    firstEvenHalve = ages.splice(0, ages.length / 2 - 1);
+    secondEvenHalve = ages.splice(ages.length / 2, ages.length);
+    console.log(firstEvenHalve, secondEvenHalve);
 } else {
-    firsthalveOdd = ages.splice(0, ages.length / 2 + 1);
-    secondhalveOdd = ages.splice(ages.lenght / 2 + 1, ages.length);
-    // console.log(firsthalveOdd, secondhalveOdd)
+    firstOddHalve = ages.splice(0, ages.length / 2);
+    secondOddHalve = ages.splice(ages.lenght / 2 - 1, ages.length);
+    console.log(firstOddHalve, secondOddHalve);
 }
-// console.log(ages);
+console.log(ages);
+
+// const num = [1, 2, 3, 4, 5, 6, 7, 8]
+// let numSort = num.sort()
+// console.log(numSort);
+// if (numSort.length % 2 === 0) {
+//     firstEvenHalve = numSort.splice(0, numSort.length / 2 - 1)
+//     secondEvenHalve = numSort.splice(numSort.length / 2, numSort.length);
+//     console.log(firstEvenHalve, secondEvenHalve);
+// } else {
+//     firstOddHalve = numSort.splice(0, numSort.length / 2)
+//     secondOddHalve = numSort.splice(numSort.length / 2 - 1, numSort.length);
+//     console.log(firstOddHalve, secondOddHalve);
+// }
+// console.log(numSort);
 
 
 const countries = [
@@ -242,3 +255,31 @@ const countries = [
 ]
 let sliceFirst10Country = countries.slice(0, 10);
 console.log(sliceFirst10Country);
+
+// Find the middle country(ies) in the countries array
+if (countries.length % 2 == 0) {
+    firstHalveEve = countries.splice(0, countries.length / 2 - 1)
+    secondHalveEve = countries.splice(countries.length / 2, countries.length);
+} else {
+    console.log(Math.floor(countries.length / 2))
+}
+console.log(countries);
+
+
+
+//   const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25];
+ages.sort()
+if (ages.length % 2 === 0); {
+    halvEven1 = ages.slice(0, ages.length / 2 - 1)
+    halvEven2 = ages.slice(ages.length / 2 + 1, ages.length);
+} else {
+    halvOdd1 = ages.slice(0, Math.ceil(ages.length / 2))
+    halvOdd2 = ages.slice(Math.ceil(ages.length / 2), ages.length))
+
+}
+console.log(ages);
+console.log(halvEven1)
+console.log(halvEven2)
+console.log(ages)
+console.log(ages.length / 2)
+console.log(ages.charAt(4.5))
